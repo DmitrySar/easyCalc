@@ -4,10 +4,6 @@ import java.util.*;
 public class ReadLine
  {
 	
-	private double a;
-	
-	private double b;
-	
 	private String line;
 	private String[] parseLine;
 	
