@@ -1,0 +1,48 @@
+@startuml
+
+interface ICalculator {
++ getResult(): double
+}
+
+class Calculator {
++ getResult(): double
+}
+
+class Main {
++ main(): void
+}
+
+class ReadLine {
++ getA(): double
++ getB(): double
++ getOperation(): String
+}
+
+class Plus implements ICalculator {
++ getResult(): double
+}
+
+class Minus implements ICalculator {
++ getResult(): double
+}
+
+class Multiplication implements ICalculator {
++ getResult(): double
+}
+
+class Division implements ICalculator {
++ getResult(): double
+}
+
+note bottom of Division: return a / b
+note bottom of Plus: return a + b
+note bottom of Minus: return a - b
+note bottom of Multiplication: return a * b
+
+Calculator *--> ICalculator
+
+Main o--> ReadLine
+
+Main o--> Calculator
+
+@enduml
