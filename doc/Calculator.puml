@@ -18,6 +18,10 @@ class ReadLine {
 + getOperation(): String
 }
 
+class Result {
++ outToConsole(object): void
+}
+
 class Plus implements ICalculator {
 + getResult(): double
 }
@@ -42,7 +46,7 @@ note bottom of Multiplication: return a * b
 Calculator *--> ICalculator
 
 Main o--> ReadLine
-
+Main o--> Result
 Main o--> Calculator
 
 @enduml
