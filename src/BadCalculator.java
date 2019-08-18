@@ -10,18 +10,18 @@ public class BadCalculator {
         }
         String[] arrayStr = string.split(" ");
         double a = Double.valueOf(arrayStr[0]);
-        String znak = arrayStr[1];
+        String opertion = arrayStr[1];
         double b = Double.valueOf(arrayStr[2]);
-        if (znak.equals("+")) {
+        if (opertion.equals("+")) {
             System.out.println(a+b);
         }
-        if (znak.equals("-")) {
+        if (opertion.equals("-")) {
             System.out.println(a-b);
         }
-        if (znak.equals("*")) {
+        if (opertion.equals("*")) {
             System.out.println(a*b);
         }
-        if (znak.equals("/")) {
+        if (opertion.equals("/")) {
             System.out.println(a/b);
         }
     }
