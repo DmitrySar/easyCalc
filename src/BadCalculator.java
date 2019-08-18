@@ -8,20 +8,21 @@ public class BadCalculator {
         if (scanner.hasNextLine()) {
             string = scanner.nextLine();
         }
+        assert string != null;
         String[] arrayStr = string.split(" ");
-        double a = Double.valueOf(arrayStr[0]);
-        String opertion = arrayStr[1];
-        double b = Double.valueOf(arrayStr[2]);
-        if (opertion.equals("+")) {
+        double a = Double.parseDouble(arrayStr[0]);
+        String operation = arrayStr[1];
+        double b = Double.parseDouble(arrayStr[2]);
+        if (operation.equals("+")) {
             System.out.println(a+b);
         }
-        if (opertion.equals("-")) {
+        if (operation.equals("-")) {
             System.out.println(a-b);
         }
-        if (opertion.equals("*")) {
+        if (operation.equals("*")) {
             System.out.println(a*b);
         }
-        if (opertion.equals("/")) {
+        if (operation.equals("/")) {
             System.out.println(a/b);
         }
     }
