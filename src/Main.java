@@ -4,6 +4,6 @@ public class Main
 	{
 		ReadLine readline = new ReadLine();
 		Calculator calculator = new Calculator(readline.getA(), readline.getOperation(), readline.getB());
-		ResultToConsole.out(calculator.getInstance().getResult());
+		Result.outToConsole(calculator.getInstance().getResult());
 	}
 }
